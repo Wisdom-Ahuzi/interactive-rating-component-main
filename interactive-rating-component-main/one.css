@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    transition: 0.2 all ease;
+    font-family: 'Overpass', sans-serif;
+}
+.container-all{
+    background-color: hsl(0, 0%, 100%);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90vh;
+    background-color: hsl(216, 12%, 8%);
+}
+.card-div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 25%;
+    height: 40vh;
+    padding: 2%;
+    margin: 2%;
+    background-color:hsl(213, 19%, 18%);
+    border-radius: 5%;
+}
+.card-div .star-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 37px;
+    height: 38px;
+    padding: 2%;
+    border-radius: 50%;
+    background-color:rgba(121, 118, 118, 0.65);
+}
+.card-div > div{
+    padding-bottom: 3%;
+}
+.card-div div:first-child{
+    margin: 2% 0;
+}
+.card-div .paragraph{
+    margin-top: 2%;
+    width: 100%;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 400px;
+    line-height:20px;
+    font-family: 'Overpass', sans-serif;
+}
+.card-div .header{
+    font-size: 23px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.card-div .circle-carrier{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    color: rgb(170, 170, 170);
+    font-family: 'Overpass', sans-serif;
+    font-size: large;
+}
+.card-div .circle-carrier > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 36px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(121, 118, 118, 0.65);
+    transition: all .3s ease-in-out;
+}
+.card-div .circle-carrier > span:hover{
+    background-color:hsl(216, 12%, 54%);
+}
+.button{
+    cursor: pointer;
+    background-color:hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 5vh;
+    border-radius:10%;
+}
+.invincible{
+    display: none;
+}
+.shower{
+    display: none;
+}
+.submitted-card{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 47vh;
+    padding: 2%;
+    margin: 2%;
+    background-color:hsl(213, 19%, 18%);
+    border-radius: 5%;
+}
+.submitted-card .receipt-image:first-child{
+    margin-top: 6.5%;
+}
+.submitted-card .option-display{
+    margin-top: 6.5%;
+    background-color:rgba(121, 118, 118, 0.65);
+    color:hsl(25, 97%, 53%);
+    padding:1% 7%;
+    border-radius: 10%;
+}
+.submitted-card .thanks{
+    margin-top: 6.5%;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 700;
+}
+.para{
+    margin-top: 2%;
+    color:hsl(217, 12%, 63%);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Overpass', sans-serif;
+}
+.active {
+    background-color:hsl(25, 97%, 53%) !important;
+}
+.yoo{
+    background-color: white;
+}
+.sup{
+    color:hsl(25, 97%, 53%) ;
+}
+@media screen and (min-width:825px) and (max-width:1400px){
+    .card-div{ 
+        align-items: flex-start;
+        flex-direction: column;
+        width: 35%;
+        height: 45vh;
+    }
+    .submitted-card{
+        width: 35%;
+        height: 50vh;
+    }
+}
+@media screen and (min-width:500px) and (max-width:824px){
+    .card-div{ 
+        align-items: flex-start;
+        flex-direction: column;
+        width: 57%;
+        height: 50vh;
+        padding: 15px;
+    }
+    .project-container{
+        width: 80%;
+        height: 90vh;
+    }
+    .submitted-card{
+        width: 57%;
+        height: 50vh;
+        padding: 15px;
+    }
+}
+@media screen and (min-width:200px) and (max-width:499px){
+    .card-div{
+        align-items: flex-start;
+        flex-direction: column;
+        width: 85%;
+        height: 45vh;
+        padding: 20px;
+    }
+    .project-container{
+        width: 90%;
+        height: 90vh;
+    }
+    .submitted-card{
+        width: 85%;
+        height: 48vh;
+        padding: 20px;
+    }
+}
+
+
